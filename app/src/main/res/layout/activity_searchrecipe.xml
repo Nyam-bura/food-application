@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:id="@+id/imgbreak"
+        android:layout_width="202dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/kula"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgpetite"
+        android:layout_width="186dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/appetite"
+        app:layout_constraintStart_toEndOf="@+id/imgbreak"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvbreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="breakfast"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreak" />
+
+    <TextView
+        android:id="@+id/tvapetite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="4dp"
+        android:text="Appetizer"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvbreak"
+        app:layout_constraintTop_toBottomOf="@+id/imgpetite" />
+
+    <ImageView
+        android:id="@+id/imglunch"
+        android:layout_width="144dp"
+        android:layout_height="143dp"
+        android:layout_marginStart="7dp"
+        android:src="@drawable/lunch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbreak" />
+
+    <ImageView
+        android:id="@+id/imgdinner"
+        android:layout_width="140dp"
+        android:layout_height="131dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/dinner"
+        app:layout_constraintStart_toEndOf="@+id/imglunch"
+        app:layout_constraintTop_toBottomOf="@+id/tvapetite" />
+
+    <TextView
+        android:id="@+id/tvlunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="Lunch"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglunch" />
+
+    <TextView
+        android:id="@+id/tvdinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="4dp"
+        android:text="Dinner"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/tvlunch"
+        app:layout_constraintTop_toBottomOf="@+id/imgdinner" />
+
+    <TextView
+        android:id="@+id/tvrecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="200dp"
+        android:text="Recipe 3 way"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbreak" />
+
+    <TextView
+        android:id="@+id/tvmeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="8dp"
+        android:text="Meals"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvrecipe" />
+
+    <TextView
+        android:id="@+id/tvfavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="8dp"
+        android:text="Favorites"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmeals" />
+
+    <TextView
+        android:id="@+id/tvcuisines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="12dp"
+        android:text="cuisines"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvfavorites" />
+
+    <ImageView
+        android:id="@+id/imgclose"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/ic_baseline_close_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcuisines" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

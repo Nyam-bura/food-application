@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipesActivity">
+
+    <TextView
+        android:id="@+id/tvcook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="What would you like to cook?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="Search"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcook" />
+
+    <ImageView
+        android:id="@+id/imgsearch"
+        android:layout_width="60dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvsearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_search_24" />
+
+    <TextView
+        android:id="@+id/tvcategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:text="Categories"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgsearch" />
+
+    <ImageView
+        android:id="@+id/imgbeef"
+        android:layout_width="135dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategories"
+        app:srcCompat="@drawable/beef" />
+
+    <ImageView
+        android:id="@+id/imgchicken"
+        android:layout_width="167dp"
+        android:layout_height="158dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toEndOf="@+id/imgbeef"
+        app:layout_constraintTop_toBottomOf="@+id/tvcategories"
+        app:srcCompat="@drawable/chicken" />
+
+    <TextView
+        android:id="@+id/tvbeef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="beef"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgbeef" />
+
+    <TextView
+        android:id="@+id/tvchicken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="8dp"
+        android:text="chicken"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tvbeef"
+        app:layout_constraintTop_toBottomOf="@+id/imgchicken" />
+
+    <ImageView
+        android:id="@+id/imgposho"
+        android:layout_width="176dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbeef"
+        app:srcCompat="@drawable/ugali" />
+
+    <ImageView
+        android:id="@+id/imgrice"
+        android:layout_width="149dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/imgposho"
+        app:layout_constraintTop_toBottomOf="@+id/tvchicken"
+        app:srcCompat="@drawable/rice" />
+
+    <TextView
+        android:id="@+id/tvposho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="4dp"
+        android:text="Ugali"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgposho" />
+
+    <TextView
+        android:id="@+id/tvrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="4dp"
+        android:text="Rice"
+        android:textSize="34sp"
+        app:layout_constraintStart_toEndOf="@+id/tvposho"
+        app:layout_constraintTop_toBottomOf="@+id/imgrice" />
+
+    <ImageView
+        android:id="@+id/imgnext"
+        android:layout_width="34dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgrice"
+        app:layout_constraintVertical_bias="0.222"
+        app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
